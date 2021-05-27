@@ -3,9 +3,9 @@ import chair from '../../../images/chair.png';
 
 const HeaderMain = () => {
     return (
-        <main className="row">
+        <main style={{ height: '600px' }} className="row d-flex align-items-center">
             <div className="col-md-4 offset-md-1">
-                <h1>Your New Smile <br/> Starts Here</h1>
+                <h1 style={{ color: '#3A4256' }}>Your New Smile <br/> Starts Here</h1>
                 <p className="text-secondary"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, quisquam accusamus autem eum excepturi nesciunt.</p>
                 <button className="btn btn-success">GET APPOINTMENT</button>
             </div>
