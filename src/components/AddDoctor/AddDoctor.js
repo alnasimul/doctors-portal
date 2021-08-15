@@ -18,9 +18,14 @@ const AddDoctor = () => {
     const handleSubmit = () => {
         const formData = new FormData()
         console.log(info);
+
+        
         formData.append('file', file);
         formData.append('name', info.name);
         formData.append('email', info.email);
+
+
+        
 
         fetch('http://localhost:5000/addADoctor', {
             method: 'POST',
@@ -33,7 +38,10 @@ const AddDoctor = () => {
             .catch(error => {
                 console.error(error)
             })
-    }
+
+     console.log(formData);
+
+     }
 
     return (
         <section  className=" row ">
